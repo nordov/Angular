@@ -1,0 +1,11 @@
+<h1>CALCULATOR</h1>
+
+<h1>{{ result }}</h1>
+
+<input type="text" #num1>
+<input type="text" #num2>
+<button (click)="addNumbers(num1, num2)">+</button>
+<button (click)="restNumbers(num1, num2)">-</button>
+<button (click)="multiplyNumbers(num1, num2)">*</button>
+<button (click)="divideNumbers(num1, num2)">/</button>
+<button (click)="clear()">Clear</button>
