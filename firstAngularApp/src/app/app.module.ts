@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 
 import { UsersModule } from './users/users.module';
 import { OperationsModule } from './operations/operations.module';
+import { SuperheroesComponent } from './superheroes/superheroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SuperheroesComponent,
   ],
   imports: [
     BrowserModule,

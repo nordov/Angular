@@ -4,10 +4,19 @@
 <!-- <app-calculator></app-calculator> -->
 
 <!-- Forms -->
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
   <input type="text" name="email" ngModel> <br><br>
   <input type="text" name="address" ngModel> <br><br>
   <input type="text" name="contact" ngModel> <br><br>
 
   <button type="submit">Submit Data</button>
-</form>
+</form> -->
+
+
+<!-- Passign data to child component -->
+<h1>Passing data from in parent to child component</h1>
+
+<app-superheroes
+  [hero]="hero"
+  [avengers]="avengers">
+</app-superheroes>

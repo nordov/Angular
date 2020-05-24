@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'firstAngularApp';
 
+  hero = "Superman";
+
+  avengers = ['Iron Man', 'The Hulk', 'Thor', 'Black Window', 'Ant-Man', 'Captain America', 'Star Lord'];
+
   onSubmit(data){
     console.table(data);
   }
