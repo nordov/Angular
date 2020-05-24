@@ -1,2 +1,13 @@
 <h1>My first App!</h1>
-<app-calculator></app-calculator>
+
+<!-- Calculator Component -->
+<!-- <app-calculator></app-calculator> -->
+
+<!-- Forms -->
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <input type="text" name="email" ngModel> <br><br>
+  <input type="text" name="address" ngModel> <br><br>
+  <input type="text" name="contact" ngModel> <br><br>
+
+  <button type="submit">Submit Data</button>
+</form>
