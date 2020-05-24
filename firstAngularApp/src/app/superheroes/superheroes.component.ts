@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-superheroes',
@@ -13,9 +13,11 @@ export class SuperheroesComponent implements OnInit {
   @Input() hero;
   @Input() avengers;
 
+  @Output() callParentFunction:EventEmitter<any> = new EventEmitter<any>();
+
   ngOnInit() {
-    console.log("My hero", this.hero);
-    console.log("Avengers", this.avengers);
+    if (!this.hero)
+      this.callParentFunction.emit("I'm the child component");
   }
 
 }

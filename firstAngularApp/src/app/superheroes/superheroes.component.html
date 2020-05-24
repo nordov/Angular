@@ -1,7 +1,13 @@
-<p>Superheroes:</p>
+<div *ngIf="hero; else elseBlock">
+  <p>Superheroes:</p>
 
-<p>My favorite superheroe:</p>
-{{ hero }}
+  <p>My favorite superheroe:</p>
+  {{ hero }}
 
-<p>Some of the avengers:</p>
-<li *ngFor="let avenger of avengers">{{ avenger }}</li>
+  <p>Some of the avengers:</p>
+  <li *ngFor="let avenger of avengers">{{ avenger }}</li>
+</div>
+
+<ng-template #elseBlock>
+  <p>Didn't receive any superhero info, instead we are passing info to the parent</p>
+</ng-template>

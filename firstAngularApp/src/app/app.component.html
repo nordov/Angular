@@ -20,3 +20,8 @@
   [hero]="hero"
   [avengers]="avengers">
 </app-superheroes>
+
+<!-- Passing data from the child to the parent component -->
+<h1>Passing data from the child to the parent component</h1>
+
+<app-superheroes (callParentFunction)="fetchChildData($event)"></app-superheroes>
